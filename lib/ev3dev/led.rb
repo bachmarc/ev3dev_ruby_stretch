@@ -13,10 +13,10 @@ module Ev3dev
     def initialize
       raise "couldn't find LED attributes" unless File.exist?(PATH)
 
-      @left_green   = set_led_path("left" , "green")
-      @left_red     = set_led_path("left" , "red"  )
-      @right_green  = set_led_path("right", "green")
-      @right_red    = set_led_path("right", "red"  )
+      @left_green   = set_led_path("led0" , ":green:brick-status")
+      @left_red     = set_led_path("led0" , ":red:brick-status"  )
+      @right_green  = set_led_path("led1", ":green:brick-status")
+      @right_red    = set_led_path("led1", ":red:brick-status"  )
 
       @default_paths  = [@left_green, @left_red, @right_green, @right_red]
       @left_paths     = [@left_green, @left_red]

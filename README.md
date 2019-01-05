@@ -4,7 +4,7 @@
 ev3dev_ruby is a gem to controll sensors and motors on EV3 using Ruby on ev3dev OS.  
 ev3dev OS is a Debian Linux-based operating system for LEGO Mindstroms EV3.
 
-- [ev3dev OS](http://www.ev3dev.org) version; ev3dev-jessie-2015-12-30
+- [ev3dev OS](http://www.ev3dev.org) version; ev3dev-stretch
 
 
 ## Install ev3dev OS

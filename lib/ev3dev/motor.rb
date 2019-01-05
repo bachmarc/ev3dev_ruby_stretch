@@ -4,7 +4,7 @@ module Ev3dev
 
     def initialize(port)
       Dir.glob("#{PATH}/motor*").each do |path|
-        if IO.read("#{path}/address").strip == "out#{port.to_s.upcase}"
+        if IO.read("#{path}/address").strip == "ev3-ports:out#{port.to_s.upcase}"
           super path
           return
         end
